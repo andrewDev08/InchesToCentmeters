@@ -3,11 +3,23 @@ using System;
 class Program {
   public static void Main (string[] args) {
     double conversionRate = 2.54;
-    int inchValue = 5;
+    int inchValue;
+    double centiValue;
     
-    double centiValue = inchValue * conversionRate;
-    
-    Console.WriteLine("{0} Inches", inchValue );
-    Console.WriteLine("{0} Centimeters", centiValue );
+    inchValue= 5;
+    centiValue = inchValue * conversionRate; 
+    Console.WriteLine("{0} Inches is {1} Centimeters", inchValue, centiValue );
+ 
+    inchValue= 5;
+    centiValue = inchValue * conversionRate; 
+    Console.WriteLine("{0} Inches is {1} Centimeters", inchValue, centiValue );
+  
+    inchValue= -15;
+    centiValue = inchValue * conversionRate; 
+    Console.WriteLine("{0} Inches is {1} Centimeters", inchValue, centiValue );
+  
+    inchValue= 15994;
+    centiValue = inchValue * conversionRate; 
+    Console.WriteLine("{0} Inches is {1} Centimeters", inchValue, centiValue );
   }
 }
